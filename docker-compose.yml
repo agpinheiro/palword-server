@@ -13,16 +13,17 @@ services:
       PUID: 1000
       PGID: 1000
       PORT: 8211  # Optional but recommended
-      PLAYERS: 16  # Optional but recommended
-      SERVER_PASSWORD: "worldofpals"  # Optional but recommended
+      PLAYERS: 5  # Optional but recommended
+      SERVER_PASSWORD: "123456"  # Optional but recommended
       MULTITHREADING: true
       RCON_ENABLED: true
       RCON_PORT: 25575
+      TARGET_MANIFEST_ID: 2342038768084482228
       TZ: "UTC"
-      ADMIN_PASSWORD: "adminPasswordHere"
+      ADMIN_PASSWORD: "10203040"
       COMMUNITY: false  # Enable this if you want your server to show up in the community servers tab, USE WITH SERVER_PASSWORD!
-      SERVER_NAME: "palworld-server-docker by Thijs van Loef"
-      SERVER_DESCRIPTION: "palworld-server-docker by Thijs van Loef"
+      SERVER_NAME: "teste"
+      SERVER_DESCRIPTION: "teste"
       ALLOW_CONNECT_PLATFORM: "Steam" # Defaults to "Steam" if not set, set this to "Xbox" if you want to host a server for Xbox players. CROSSPLAY BETWEEN XBOX-STEAM IS NOT YET SUPPORTED
     volumes:
       - ./palworld:/palworld/
